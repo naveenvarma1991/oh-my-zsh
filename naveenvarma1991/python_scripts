@@ -1,0 +1,51 @@
+# I just neeed an output to read a java file and find the class name with it. it was successfully showing the class name when we are changing the class name on runtime also. but the problem is  
+ # when i reading a new file i need to adjust its string length on line 10 watch carefully. so i tried a lot but imnot getting the exact result.
+  # so please revise this.
+    # from line 34 it was displaying the count variable.(for ex. i declared a variable "String name".it shows the number of variables count.
+     #please give me  suggestion for the below code.
+
+
+#!/usr/bin/python3
+
+Infile = input("Enter the file name : ")
+with open(Infile) as f:
+ str1 = f.read().split()
+for i in range(len(str1)-23):
+   if 'class' in str1:
+     index=str1.index("class")
+   str1[index+1]
+   indices = [i for i, x in enumerate(str1) if x == "1"]
+print('"{"')
+print("class name is : "+str1[i])
+
+total = 0
+with open(Infile) as f:
+   for line in f:#!/usr/bin/python3
+
+Infile = input("Enter the file name : ")
+with open(Infile) as f:
+ str1 = f.read().split()
+for i in range(len(str1)-23):
+   if 'class' in str1:
+     index=str1.index("class")
+   str1[index+1]
+   indices = [i for i, x in enumerate(str1) if x == "1"]
+print('"{"')
+print("class name is : "+str1[i])
+
+total = 0
+with open(Infile) as f:
+   for line in f:
+     finded = line.find('int')
+     if finded != -1 and finded != 0:
+        total += 1
+print('"Field content"  : ' + '"' + str( total )+'"'+",")
+print('"}"')
+
+
+     finded = line.find('int')
+     if finded != -1 and finded != 0:
+        total += 1
+print('"Field content"  : ' + '"' + str( total )+'"'+",")
+print('"}"')
+
